@@ -37,14 +37,12 @@ export default {
 
 .card
 {
-    width: 250px;
-    box-shadow: 0px 0px 12px rgb(0, 0, 0,0.1);
-    margin: 0 25px 50px;
+    width: 275px;
+    box-shadow: 0px 0px 12px 3px rgb(0, 0, 0,0.1);
+    margin: 0 0 50px;
     padding: 25px;
     transition: transform 0.3s ease;
 }
-
-.list .card:nth-child(4n+1) { margin-left: 0; }
 
 .card img { height: 250px; display: block; margin: auto; }
 

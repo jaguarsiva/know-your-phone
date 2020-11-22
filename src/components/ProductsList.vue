@@ -3,7 +3,7 @@
         <h1> {{ this.brandName }} </h1>
 
         <div class="list">
-            <ProductCard v-for="(phone,index) in phones" :key="index" :phone="phone"/>
+            <ProductCard v-for="(phone,index) in phones" :key="index" :phone="phone" class="product-card"/>
         </div>
     </div>
 </template>
@@ -57,6 +57,14 @@ h1
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+}
+
+@media( max-width: 1023px )
+{
+    h1 { text-align: center; }
+
+    .list { justify-content: space-evenly; }
 }
 
 </style>

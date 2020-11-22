@@ -47,6 +47,8 @@ button
 
 /* Common Stylings */
 
+html.no-scroll { overflow: hidden; }
+
 .container
 {
 	max-width: 1330px;

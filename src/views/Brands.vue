@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div id="brands">
-            <h1>Popular Brands</h1>
+            <h1>All Brands</h1>
 
             <div v-if="loading">
                 <img src="../assets/loader.gif" alt="loader" class="loader-img">
@@ -57,10 +57,7 @@ export default {
 
 <style scoped>
 
-#brands
-{
-    margin: 100px auto;
-}
+#brands { margin: 100px auto; }
 
 h1
 {
@@ -70,12 +67,9 @@ h1
     margin-bottom: 50px;
 }
 
-.loader-img { height: 500px; }
+.loader-img { height: 500px;  max-width: 100%; }
 
-.flex
-{
-    justify-content: space-around;
-}
+.flex { justify-content: space-around; }
 
 .child
 {
@@ -103,6 +97,11 @@ h2
     font-family: "JosefinSans-Bold",sans-serif;
     color: black;
     text-transform: capitalize;
+}
+
+@media (max-width: 1023px)
+{
+    .child { width: 280px; }
 }
 
 </style>

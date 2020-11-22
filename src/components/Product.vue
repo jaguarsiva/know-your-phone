@@ -59,10 +59,7 @@ export default {
     margin: 100px auto;
 }
 
-.head
-{
-    display: flex;
-}
+.head { display: flex; }
 
 .head img 
 { 
@@ -84,8 +81,23 @@ h1
 
 h2
 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Montserrat-SemiBold", serif;
     line-height: 1.5;
 }
+
+@media (max-width: 1023px)
+{
+    .head { flex-direction: column; }
+
+    .head img { margin: 0 auto; }
+
+    .head-text { margin: 100px auto 0; text-align: center; }
+}
+
+@media (max-width: 450px)
+{
+    .head img { width: 90%; height: auto; padding: 0; box-shadow: none; }
+}
+
 </style>

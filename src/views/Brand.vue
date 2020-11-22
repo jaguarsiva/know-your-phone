@@ -128,10 +128,9 @@ h5
 .pagination
 {
     height: 75px;
-    max-width: 300px;
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -170,5 +169,15 @@ h5
 }
 
 .disabled { pointer-events: none; filter: grayscale(100%); }
+
+.loader-img { max-width: 100%; }
+
+@media (max-width: 425px)
+{
+
+    .pagination span { font-size: 20px; padding: 5px 10px; } 
+
+    .prev-btn img , .next-btn img { height: 35px; width: 35px; }
+}
 
 </style>

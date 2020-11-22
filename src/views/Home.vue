@@ -37,7 +37,7 @@ export default {
 .banner
 {
     background: linear-gradient(to left,#6442ff 0%,#9012fe 100%);
-    height: calc(100vh + 100px);
+    height: 900px;
     transform: skewY(-12deg);
     position: relative;
     z-index: 2;
@@ -69,7 +69,7 @@ export default {
 
 .banner-image 
 { 
-    height: 100vh;
+    height: 750px;
     position: absolute;
     top: 75px; right: 15px;
     filter: drop-shadow(0px 0px 18px rgb(255,255,255,0.5));
@@ -90,6 +90,42 @@ export default {
     font-size: 60px;
     font-family: "JosefinSans-Bold",sans-serif;
     text-align: center;
+}
+
+@media (min-width: 1600px)
+{
+    .banner, .banner .container { transform: skew(0deg); }
+}
+
+@media (max-width: 1256px)
+{
+    .banner-image { height: 650px; }
+
+    .banner-text { width: 65%; }
+}
+
+@media (max-width: 1023px)
+{
+    .banner { height: auto; }
+
+    .banner .container { flex-direction: column; height: auto; }
+
+    .banner-image { position: relative; }
+
+    .banner-text { width: 100%; text-align: center; margin: 100px auto 0; }
+
+    .banner-image {  margin-top: -150px; height: 750px; top: 250px; }
+}
+
+@media ( max-width: 767px )
+{
+    .banner , .banner .container { transform: skew(0deg); }
+
+    .banner-text { font-size: 55px;  margin: 50px 0; }
+
+    .banner-image { display: none; }
+
+    .brand-heading { margin-top: -50px; line-height: 1.5; }
 }
 
 </style>
